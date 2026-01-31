@@ -2,6 +2,7 @@ body {
     background-image: linear-gradient(#63A69A, #B7EDE0);
     background-repeat: no-repeat;
     font-family: Balsamiq Sans;
+    letter-spacing: 0.5px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -67,7 +68,7 @@ p {
     font-weight: bold;
     margin: 3px auto;
     text-align: center;
-    padding: 12px;
+    padding: 5px;
 }
 
 input[type=number] {
