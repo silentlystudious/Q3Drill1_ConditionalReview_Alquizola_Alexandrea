@@ -1,24 +1,118 @@
-from pyscript import document, display
+body {
+    background-image: linear-gradient(#63A69A, #B7EDE0);
+    background-repeat: no-repeat;
+    font-family: Balsamiq Sans;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-# COMPUTATION TO FIND THE AVERAGE OF TWO NUMBERS FROM 1 TO 100
-def avg_system(e):
+.btn {
+    background-color: #5E4A4B;
+    border: 2px solid #251d1d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px #83605C;
+    color: #F2E4C9;
+    font-family: Balsamiq Sans;
+    font-size: large;
+    font-weight: bold;
+    margin: 3px auto;
+    padding: 10px;
+    width: 75%;
+}
 
-    # FLOAT VARIABLES FOR GRADE CALCULATION, DEFAULT IS 0
-    num1 = float(document.getElementById("num1").value or 0)
-    num2 = float(document.getElementById("num2").value or 0)
+.btn:hover {
+    background-color: #5E4A4B;
+    border: 2px solid #251d1d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px #83605C;
+    color: #F2E4C9;
+    cursor: pointer;
+    font-family: Balsamiq Sans;
+    font-size: large;
+    font-weight: bold;
+    margin: 3px auto;
+    padding: 10px;
+    text-decoration: underline;
+    transition: 0.75s ease;
+    width: 80%;
+}
 
-    # COMPUTES THE AVERAGE OF TWO NUMBERS
-    average = (num1 + num2)/2
-    document.getElementById("average").innerText = f"⭐ Your average is {average}"
+h2 {
+    background-color: #5D968F;
+    border-top: 2px solid #224942;
+    border-left: 2px solid #224942;
+    border-right: 2px solid #328677;
+    border-bottom: 2px solid #328677;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #90CDBE;
+    color: #FFD576;
+    font-weight: bold;
+    margin: 3px auto;
+    padding: 12px;
+}
 
-    # TO SHOW INPUT IF NULL OR NOT
-    if not (1 <= num1 <= 100 and 1 <= num2 <= 100):
-        document.getElementById("average").innerText = "⚠️ Uh oh! You have an invalid average!"
-        document.getElementById("result").innerText = "‼️ Are you sure you input a number from 1 to 100?"
-        return
+input[type=number] {
+    background-color: #D8E7D2;
+    border-left: 2px solid #8ECAC2;
+    border-top: 2px solid #8ECAC2;
+    border-right: 2px solid #6c9d97;
+    border-bottom: 2px solid  #6c9d97;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #E4E7CC;
+    box-sizing: border-box;
+    font-family: Balsamiq Sans;
+    font-size: medium;
+    margin: 3px auto;
+    padding: 10px;
+    width: 75%;
+}
 
-    # PASS/FAIL DETERMINER
-    if average >= 75:
-        document.getElementById("result").innerText = "✔️ Congratulations! You passed!"
-    else:
-        document.getElementById("result").innerText = "❌ Sorry.... You failed."
+input[type=number]:hover {
+    background-color: #D8E7D2;
+    border-left: 2px solid #8ECAC2;
+    border-top: 2px solid #8ECAC2;
+    border-right: 2px solid #6c9d97;
+    border-bottom: 2px solid  #6c9d97;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #E4E7CC;
+    box-sizing: border-box;
+    font-family: Balsamiq Sans;
+    font-size: medium;
+    margin: 6px auto;
+    padding: 10px;
+    transition: 0.75s ease;
+    width: 80%;
+}
+
+.container {
+    background-color: #FDF8CE;
+    border-top: 5px solid #EEC680;
+    border-left: 5px solid #EEC680;
+    border-right: 5px solid #f3daaf;
+    border-bottom: 5px solid #f3daaf;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #A77C38;
+    margin: 45px auto;
+    max-width: 450px;
+    padding: 15px;
+}
+
+label,
+p {
+    color: #493D3F;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+.average {
+    color: #609B9F;
+    font-weight: bold;
+}
+
+.result {
+    color: #436767;
+    font-weight: bold;
+}
