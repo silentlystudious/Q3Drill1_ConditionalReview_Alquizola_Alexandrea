@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Grade Calculator</title>
+</head>
+    
+<body>
+    <!-- SIMPLE AVERAGE CALCULATOR -->
+    <div class="container">
+        <h2>Simple Average Finder</h2>
+        <br>
+        <b style="color: #578771">Firefly dreams of doing well in her studies! Input your scores below so she knows the average she needs to pass school! ✨</b>
+        <br><br>
+        <img src="firefly.webp" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" style="max-width: 350px">
+        <br><br>
+        <div class="container-fluid">
+            <label for="num1" class="label">Score 1:</label>
+            <br>
+            <input type="number" id="num1" min="1" max="100" placeholder="Input first number" required>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <label for="num2" class="label">Score 2:</label>
+            <br>
+            <input type="number" id="num2" min="1" max="100" placeholder="Input second number" required>
+            <br>
+        </div>
+        <br>
+        <button class="btn" py-click="avg_system">Calculate Average</button>
+        <br><br>
+        <p class="average" id="average"></p>
+        <p class="result" id="result"></p>
+    </div>
+
+    <!-- PYTHON SCRIPT -->
+    <script type="py" src="main.py"></script>
+</body>
+
+</html>
